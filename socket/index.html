@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Socket.io</title>
+  </head>
+  <body>
+    <h1>Hello, world</h1>
+  </body>
+</html> -->
+
+<!-- 2. -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Socket.io</title>
+  </head>
+  <script src="/socket.io/socket.io.js"></script>
+  <body>
+    <script>
+      var socket = io();
+    </script>
+    <h1>Hello, world</h1>
+  </body>
+</html> -->
+
+<!-- 3.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Socket.io</title>
+  </head>
+  <script src="/socket.io/socket.io.js"></script>
+  <body>
+    <script>
+      var socket = io();
+      socket.on('message', function(data) {
+        console.log(data);
+        document.write(data);
+      });
+    </script>
+    <h1>Hello, world</h1>
+  </body>
+</html> -->
+
+<!-- 4. -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Socket.io</title>
+  </head>
+  <script src="/socket.io/socket.io.js"></script>
+  <body>
+    <script>
+      var socket = io();
+      socket.on('myEvent', function(data) {
+        console.log(data);
+        document.write(data.description);
+      });
+    </script>
+    <h1>Hello, world</h1>
+  </body>
+</html> -->
+
+<!-- 5. -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Socket.io</title>
+  </head>
+  <script src="/socket.io/socket.io.js"></script>
+  <body>
+    <script>
+      var socket = io();
+      setInterval(function() {
+        socket.emit('clientEvent', 'This is from client');
+      }, 2000);
+    </script>
+    <h1>Hello, world</h1>
+  </body>
+</html> -->
+
+<!-- 6. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Socket.io</title>
+  </head>
+  <script src="/socket.io/socket.io.js"></script>
+  <body>
+    <script>
+      var socket = io();
+      socket.on('broadcast', function(data) {
+        document.body.innerHTML = '';
+      });
+    </script>
+    <h1>Hello, world</h1>
+  </body>
+</html>
